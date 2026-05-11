@@ -525,7 +525,7 @@ class TransformerDecoder(Decoder):
                 num_heads=num_heads,
                 dropout=dropout,
                 alpha=kwargs.get("alpha", 1.0),
-                layer_norm=kwargs.get("layer_norm", "post"),
+                layer_norm=kwargs.get("layer_norm", "pre"),
                 activation=kwargs.get("activation", "relu"),
             ) for _ in range(num_layers)
         ])
